@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Related Objects</title>
+
+    <style>
+        body {
+           background-color:rgb(255, 73, 143);
+           color: rgb(255, 170, 199);
+           text-shadow: 3px 3px rgb(126, 126, 126);
+           font-size: 40px;
+        }
+
+
+        .center {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+            line-height: 500px;
+            height: 200px;
+            
+            
+
+        }
+
+        a { 
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f187ba;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: auto;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .centerbutton {
+            margin: 0;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+
+     </style>
+
+</head>
+<body>
+    <div class="center">
+        <h1>THE END PAGE</h1>
+        
+    </div>
+    <div class="centerbutton">
+    <a href="explanation.html"><button class="button" style="vertical-align:middle"><span>Next </span></button></a>
+    </div>
+    
+    
+</body>
+</html>
